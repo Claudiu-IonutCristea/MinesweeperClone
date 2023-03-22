@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UserInterface/StyleSheet.uss?fileID=7433441132597879392&amp;guid=3b8e4454ed16fda458c67e88d70fb8ef&amp;type=3#StyleSheet" />
+    <ui:VisualElement style="justify-content: space-around; align-items: stretch; height: auto; width: auto; flex-grow: 1; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); display: flex;">
+        <ui:Label tabindex="-1" text="Minesweeper" display-tooltip-when-elided="true" name="Title" style="-unity-text-align: middle-center; -unity-font: none; font-size: 102px; color: rgb(0, 0, 0); -unity-text-outline-color: rgb(255, 255, 255); -unity-text-outline-width: 0; -unity-font-definition: url(&apos;project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&amp;guid=3e548ba383e88ad45ab2dfad7a2bdde1&amp;type=2#CabinSketch-Regular SDF&apos;);" />
+        <ui:VisualElement name="ButtonsContainer" style="top: auto; flex-wrap: nowrap; flex-direction: column; justify-content: center; align-items: center; position: relative; left: auto; bottom: 0;">
+            <ui:Button tabindex="-1" text="Hexagonal Grid" display-tooltip-when-elided="true" name="HexagonalGridButton" class="button" />
+            <ui:Button tabindex="-1" text="Square Grid" display-tooltip-when-elided="true" name="SquareGridButton" tooltip="Not Implemented... yet" class="button" />
+            <ui:Button tabindex="-1" text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

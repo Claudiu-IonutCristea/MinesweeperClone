@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UserInterface/StyleSheet.uss?fileID=7433441132597879392&amp;guid=3b8e4454ed16fda458c67e88d70fb8ef&amp;type=3#StyleSheet" />
+    <ui:VisualElement style="flex-grow: 1; -unity-font-definition: url(&apos;project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&amp;guid=3e548ba383e88ad45ab2dfad7a2bdde1&amp;type=2#CabinSketch-Regular SDF&apos;); font-size: 68px; justify-content: space-between;">
+        <ui:VisualElement style="flex-direction: row; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; align-items: center; justify-content: space-between;">
+            <ui:VisualElement style="flex-grow: 1; align-items: flex-start;">
+                <ui:VisualElement name="MineCountDisplay" style="flex-direction: row; align-items: center;">
+                    <ui:VisualElement name="MineImage" style="background-image: url(&apos;project://database/Assets/MinesweeperSprites.png?fileID=1254317587&amp;guid=ab51c18f2b2a84b498f06ee90f3a07c0&amp;type=3#MinesweeperSprites_7&apos;); width: 64px; height: 64px; align-items: flex-start;" />
+                    <ui:Label tabindex="-1" text="99" display-tooltip-when-elided="true" name="MineCountText" style="align-items: flex-start;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 0.1; align-items: center;">
+                <ui:Button tabindex="-1" text="New Game" display-tooltip-when-elided="true" name="NewGameButton" enable-rich-text="false" class="button" style="font-size: 36px; align-items: center; justify-content: space-around; flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; align-items: flex-end;">
+                <ui:Label tabindex="-1" text="00:00" display-tooltip-when-elided="true" name="TimerDisplay" style="font-size: 36px; align-items: flex-end;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="align-items: flex-start;">
+            <ui:Button tabindex="-1" text="Back" display-tooltip-when-elided="true" name="BackToMenuButton" class="button" style="font-size: 18px; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

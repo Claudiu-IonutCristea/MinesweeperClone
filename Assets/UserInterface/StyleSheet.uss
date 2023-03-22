@@ -1,0 +1,47 @@
+.button {
+    width: auto;
+    -unity-font: none;
+    font-size: 52px;
+    -unity-font-style: normal;
+    -unity-text-align: middle-center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-outline-width: 0;
+    -unity-font-definition: url('project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&guid=3e548ba383e88ad45ab2dfad7a2bdde1&type=2#CabinSketch-Regular SDF');
+}
+
+.slider {
+    flex-direction: row;
+    max-width: 50%;
+    font-size: 36px;
+    -unity-font-definition: url('project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&guid=3e548ba383e88ad45ab2dfad7a2bdde1&type=2#CabinSketch-Regular SDF');
+    -unity-text-align: middle-right;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.intField {
+    flex-grow: 1;
+    font-size: 36px;
+    -unity-font-definition: url('project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&guid=3e548ba383e88ad45ab2dfad7a2bdde1&type=2#CabinSketch-Regular SDF');
+    -unity-text-align: middle-left;
+    justify-content: center;
+    max-height: 70px;
+    max-width: 150px;
+}

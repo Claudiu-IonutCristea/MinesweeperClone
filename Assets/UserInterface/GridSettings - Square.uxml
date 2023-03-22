@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UserInterface/StyleSheet.uss?fileID=7433441132597879392&amp;guid=3b8e4454ed16fda458c67e88d70fb8ef&amp;type=3#StyleSheet" />
+    <ui:VisualElement style="flex-grow: 1; -unity-font-definition: url(&apos;project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&amp;guid=3e548ba383e88ad45ab2dfad7a2bdde1&amp;type=2#CabinSketch-Regular SDF&apos;); align-items: stretch; display: flex;">
+        <ui:RadioButtonGroup label="Difficulty" name="DifficultyRadioGroup" choices="Easy, Medium, Hard" style="flex-direction: column; flex-wrap: nowrap; font-size: 42px; justify-content: flex-start; align-items: center; -unity-font-definition: url(&apos;project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&amp;guid=3e548ba383e88ad45ab2dfad7a2bdde1&amp;type=2#CabinSketch-Regular SDF&apos;); -unity-font-style: normal; color: rgb(0, 0, 0);" />
+        <ui:VisualElement style="justify-content: center; align-items: stretch; flex-grow: 1;">
+            <ui:VisualElement name="GridSize">
+                <ui:VisualElement name="Width" style="justify-content: center; padding-left: 50px; padding-right: 50px; flex-direction: row; flex-grow: 1; align-items: center;">
+                    <ui:SliderInt picking-mode="Ignore" label="Grid Width" value="10" high-value="100" name="GridSizeWidthSlider" low-value="6" class="slider" />
+                    <ui:IntegerField value="10" name="GridSizeWidthValue" class="intField" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Height" style="justify-content: center; padding-left: 50px; padding-right: 50px; flex-direction: row; flex-grow: 1; align-items: center;">
+                    <ui:SliderInt picking-mode="Ignore" label="Grid Height" value="10" high-value="100" name="GridSizeHeightSlider" low-value="6" class="slider" />
+                    <ui:IntegerField value="10" name="GridSizeHeightValue" class="intField" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="BombCount" style="justify-content: center; padding-left: 50px; padding-right: 50px; flex-direction: row; flex-grow: 1; align-items: center;">
+                <ui:Slider picking-mode="Ignore" label="Mines Count" value="0.1" high-value="0.8" name="BombCountSlider" show-input-field="false" low-value="0.1" class="slider" />
+                <ui:IntegerField value="10" name="BombCountValue" class="intField" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BombCoverage" style="flex-direction: row; min-width: auto; min-height: auto; -unity-font-definition: url(&apos;project://database/Assets/Fonts/CabinSketch-Regular%20SDF.asset?fileID=11400000&amp;guid=3e548ba383e88ad45ab2dfad7a2bdde1&amp;type=2#CabinSketch-Regular SDF&apos;); justify-content: center; font-size: 24px; flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Bomb coverage:" display-tooltip-when-elided="true" />
+                <ui:Label tabindex="-1" text="10.0%" display-tooltip-when-elided="true" name="BombCoveragePercentageText" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/CabinSketch-Bold%20SDF.asset?fileID=11400000&amp;guid=69e43b2d5eaaef249b9bf1b717b5003a&amp;type=2#CabinSketch-Bold SDF&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="align-items: center; flex-direction: row; justify-content: center; flex-grow: 1;">
+                <ui:Button tabindex="-1" text="Back" display-tooltip-when-elided="true" name="BackButton" class="button" style="align-items: center;" />
+                <ui:Button tabindex="-1" text="Play" display-tooltip-when-elided="true" name="PlayButton" class="button" style="align-items: center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
