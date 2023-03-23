@@ -16,6 +16,10 @@ public class MainMenuUI : UIBase
 		_gridHexButton = _root.Q<Button>("HexagonalGridButton");
 		_gridSqrButton = _root.Q<Button>("SquareGridButton");
 		_quitButton = _root.Q<Button>("QuitButton");
+
+#if UNITY_WEBGL
+		_quitButton.visible = false;
+#endif
 	}
 
 	public override void Show()
@@ -52,7 +56,6 @@ public class MainMenuUI : UIBase
 #if UNITY_EDITOR
 		Debug.Log("Quitting App!");
 #endif
-
 		Application.Quit();
 	}
 }
